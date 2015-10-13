@@ -1,0 +1,145 @@
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px
+}
+
+.header{
+
+	text-align: center;
+	background-color: #00CCFF;
+	height: 80%;
+	background-image: url('sunset.jpg'); /* if url, then use url('URL');*/
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: solid 3px black;
+	margin-top: 40px;
+}
+
+.menuBar{
+    width:100%;
+    height:40px;
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: white;
+    border-bottom: solid 3px black;
+}
+
+.nav{
+    float:right;
+    padding:0;
+    margin-right:10px;
+    font-family: Trebuchet MS;
+}
+
+.nav ul li{
+    float:left;
+    padding-left: 10px; 
+    padding-right: 10px;t
+    }
+
+.nav a:link{
+	text-decoration: none;
+	color: black;
+}
+/* after link pressed */
+.nav a:visited {
+    text-decoration: none;
+    color: black;
+}
+/* mouse over link */
+.nav a:hover {
+    color: gray;
+}
+
+div.linkedIn img{
+
+	height: 40px;
+	float: left; 
+	padding:0;
+
+}
+.profile-pic{
+
+	width: 250px;
+	border-radius: 50%; /*can use 75px too */
+}
+
+.my-website-div{
+
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 20px;
+
+}
+
+.main
+{
+font-family: "Microsoft Yahei UI Light";
+}
+
+h1
+{
+	font-size: 30px;
+	text-decoration: underline;
+	display: block; 	
+}
+
+
+.aboutMe
+{
+	padding: 10px;
+ 	margin-left: 0px
+}
+
+.aboutMe img
+{
+	height: 300px;
+	border: 0px;
+}
+
+.aboutMe tr 
+{
+	padding-right: 100px;
+ 	vertical-align: top;
+	padding-top:0px;
+}
+
+.skills
+{
+	background-color: gray;
+	padding: 10px;
+}
+
+.skillsImages
+{
+	text-align: center;
+}
+.skillsImages img
+{
+	border-radius: 50%;
+	width: 200px;
+	padding: 40px;
+}
+
+.projects
+{
+	padding: 10px;
+}
+
+.contact
+{
+	background-color: gray;
+	padding: 10px;
+}
+
+
+
+
+
+
