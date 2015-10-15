@@ -3,21 +3,6 @@ body {
  margin-right: 0px;
  margin-bottom: 0px;
  margin-left: 0px
-
-}
-
-.header{
-
-	text-align: center;
-	background-color: #00CCFF;
-	height: 80%;
-	background-image: url('sunset.jpg');/* if url, then use url('URL');*/
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 40px;
 }
 
 .menuBar{
@@ -25,9 +10,12 @@ body {
     height:40px;
     display:block;
     position:fixed;
+    padding: 5px;
     top:0;
     left:0;
     background-color: white;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
 }
 
 .nav{
@@ -57,6 +45,19 @@ body {
     color: gray;
 }
 
+.header{
+
+	text-align: left;
+	background-color: #00CCFF;
+	height: 80%;
+	background-image: url('sunset.jpg');/* if url, then use url('URL');*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+}
+
 .profile-pic{
 
 	width: 250px;
@@ -68,12 +69,12 @@ body {
 	color: white;
 	font-family: Trebuchet MS;
 	font-size: 30px;
+	margin-left: 20px;
 }
 
 .headerMain h1
 {
 	font-size: 90px;
-	margin: -5px;
 	font-weight: bold;
 }
 
@@ -85,14 +86,13 @@ font-family: Trebuchet MS;
 h1
 {
 	font-size: 30px;
-	display: block; 	
 }
 
 
 .aboutMe
 {
 	padding: 10px;
- 	margin-left: 0px
+ 	margin-left: 0px;
 }
 
 .aboutMe img
@@ -117,12 +117,14 @@ h1
 .skillsImages
 {
 	text-align: center;
+		padding: 0px;
 }
 .skillsImages img
 {
 	border-radius: 50%;
 	width: 200px;
-	padding: 40px;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 .projects
