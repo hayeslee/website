@@ -3,6 +3,7 @@ body {
  margin-right: 0px;
  margin-bottom: 0px;
  margin-left: 0px
+
 }
 
 .header{
@@ -10,12 +11,12 @@ body {
 	text-align: center;
 	background-color: #00CCFF;
 	height: 80%;
-	background-image: url('sunset.jpg'); /* if url, then use url('URL');*/
+	background-image: url('sunset.jpg');/* if url, then use url('URL');*/
+	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-bottom: solid 3px black;
 	margin-top: 40px;
 }
 
@@ -27,7 +28,6 @@ body {
     top:0;
     left:0;
     background-color: white;
-    border-bottom: solid 3px black;
 }
 
 .nav{
@@ -57,36 +57,34 @@ body {
     color: gray;
 }
 
-div.linkedIn img{
-
-	height: 40px;
-	float: left; 
-	padding:0;
-
-}
 .profile-pic{
 
 	width: 250px;
 	border-radius: 50%; /*can use 75px too */
 }
 
-.my-website-div{
+.headerMain{
 
 	color: white;
 	font-family: Trebuchet MS;
-	font-size: 20px;
+	font-size: 30px;
+}
 
+.headerMain h1
+{
+	font-size: 90px;
+	margin: -5px;
+	font-weight: bold;
 }
 
 .main
 {
-font-family: "Microsoft Yahei UI Light";
+font-family: Trebuchet MS;
 }
 
 h1
 {
 	font-size: 30px;
-	text-decoration: underline;
 	display: block; 	
 }
 
@@ -138,7 +136,12 @@ h1
 	padding: 10px;
 }
 
-
+footer
+{
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	padding: 10px;
+}
 
 
 
