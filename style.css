@@ -1,0 +1,220 @@
+body { 
+    padding-top: 65px; 
+    background-size: 100%;
+    position: relative;
+    background-image: url('background.png');*/
+}
+
+h1{
+	 font-family: 'Indie Flower', cursive !important;
+   font-size: 80px !important;
+}
+
+h2{
+   /*font-family: 'Montserrat', sans-serif !important;*/
+   font-family: 'Indie Flower', cursive !important;
+}
+
+figure img{
+  width: 200px;
+}
+
+.projects{
+
+  font-size: 16px; 
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.projects:hover{
+      -webkit-filter: opacity(50%);
+      cursor: pointer;
+}
+
+.profile{
+  float: right;
+  width: 150px;
+  margin-left: 8px;
+}
+
+.float-left{
+  float: left;
+   width: 35%;
+}
+
+.float-right{
+  float: right;
+}
+
+.hobbiesImages{
+	width: 15%;
+    -webkit-filter: invert(0%); /* Chrome, Safari, Opera */
+}
+
+.hobbiesImages:hover { 
+	-webkit-filter: invert(100%);
+	cursor: pointer;
+}
+
+.hobbies{
+	display: none;
+}
+
+.navbar-inverse{ /* assigning the top bar to the entire navbar div element */
+  box-shadow: inset 0px 6px 0px #777; /* initial gray color to the top bar */
+  font-family: 'Indie Flower', cursive !important;   
+}
+
+.nav .navbar-nav{
+  float: right;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: white;
+    background-color: #AAA;
+    box-shadow: inset 0px 6px 0px #000; /* switch to a darker color on hover */
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: gray;
+    box-shadow: inset 0px 6px 0px #AAA; /* switch to a lighter color for active element */
+}
+
+.page{
+	display: none;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .4);
+    background-color: #CFCFCF
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2C3E50
+}
+
+/* ---- Timeline ---- */
+
+.timeline ol {
+  position: relative;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: 4px;
+  background: #000;
+}
+.timeline ol::before,
+.timeline ol::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 10px;
+  border: 10px solid #000;
+}
+.timeline ol::before {
+  left: -5px;
+}
+.timeline ol::after {
+  right: -10px;
+  border: 10px solid transparent;
+  border-right: 0;
+  border-left: 20px solid #000;
+  border-radius: 3px;
+}
+
+/* ---- Timeline elements ---- */
+
+.timeline li {
+  position: relative;
+  top: -52px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive !important;
+  /*transform: rotate(-45deg);*/*/
+  /*font: bold 14px arial;*/
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: 4px solid #000;
+  border-radius: 10px;
+  background: #eee;
+  top: 50px;
+  left: 50%;
+}
+
+/* ---- Details ---- */
+
+.details {
+  display: none;
+  position: absolute;
+  left: 45%;
+  top: 60px;
+  width: 350px;
+  height: 100px;
+  padding: 10px;
+  overflow-y: scroll;
+  border-radius: 3px;
+  border-right: 2px solid rgba(0,0,0,.1);
+  border-bottom: 2px solid rgba(0,0,0,.1);
+  font-family: arial;
+  text-align: left;
+  background: #fff;
+}
+.details::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  border-top: 0;
+}
+
+/* ---- Hover effects ---- */
+
+.timeline li:hover {
+  cursor: pointer;
+  color: #28e;
+}
+.timeline li:hover::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  background: #eee;
+  top: 50px;
+  left: 50%;
+}
+.timeline li:hover .details {
+  display: block;
+  color: #444;
+}

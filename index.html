@@ -1,88 +1,329 @@
-<html>
-	<head>
-		<title> Hayes' Website </title>
-		<link type = "text/css" rel = "stylesheet" href = "main.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-	</head>
-	<body>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
-	<div class = "menuBar">
-        		<div class="nav"> 
-	            	<ul>
-	                <li><a href = "#aboutMe"> About Me </a></li>
-	                <li><a href = "#skills">Skills </a></li>
-	                <li><a href = "#projects">Projects </a></li>
-	                <li><a href = "#contact">Contact </a></li>
-	           		</ul> 
-        		</div>
-	</div>
-
-		<section class = "header">
-		
-			<div class = "headerMain">
-				<!--img src ="myface.jpg" class = "profile-pic"/-->
-				<h1> HAYES LEE </h1>
-
-				<p> 1A Systems Design Engineering - University of Waterloo </p>
-			</div>
-			
-		</section>
+  <title>Hayes Lee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="circle.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 
-		<section class = "main">
+</head>
+<header>
+<!--  <nav class="navbar-inverse navbar-fixed-top"> 
+        <div class="navbar-header"> 
+          <a class="navbar-brand" href="index.html">HAYES LEE</a>
+        </div>
+        <div class="navbar-inner">
+          <ul class="nav navbar-nav">  
+            <li><a href=# onclick="return show('home');"> HOME</a></li> 
+            <li><a href=# onclick="return show('about');"> ABOUT ME</a></li> 
+            <li><a href=# onclick="return show('skills');">SKILLS/EXPERIENCE</a></li> 
+            <li><a href=# onclick="return show('projects');">PROJECTS</a></li>
+            <li><a href=# onclick="return show('contact');">CONTACT</a></li>
+          </ul>
+        </div>
+  </nav> -->
 
-			<div class = "aboutMe">
-				<h1 id ="aboutMe" > ABOUT ME</h1>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">HAYES LEE</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
 
-				<table>
-					<tr>
-						<td>
-						<p>Hi! My name is Hayes Lee and I am a student in 1A Systems Design Engineering at the University of Waterloo. Welcome to my website where you can find out a little more about me! </p>
-						</td>
-						<td>
-						<img src ="myface.jpg"/>
-						</td>
-					</tr>
-				</table>
-			</div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id = "collapse-navbar">
+            <ul class="nav navbar-nav"style = "float: right">  
+              <li><a href=# onclick="return show('home');"> HOME</a></li> 
+              <li><a href=# onclick="return show('about');"> ABOUT ME</a></li> 
+              <li><a href=# onclick="return show('skills');">SKILLS/EXPERIENCE</a></li> 
+              <li><a href=# onclick="return show('projects');">PROJECTS</a></li>
+              <li><a href=# onclick="return show('contact');">CONTACT</a></li>
+          </ul>
+        </div>
+    </div>
+  </nav>
 
-			<div class = "skills">
-				<h1 id = "skills"> SKILLS</h1>
-				
-				<div class = "skillsImages">
-					<img src = "skills1.png">
-					<img src = "skills2.png">
-					<img src = "http://placehold.it/200x200">
-					<img src = "http://placehold.it/200x200">
-				</div>
+</header>
 
-
-			</div>
-
-			<div class = "projects">
-				<h1 id = "projects"> PROJECTS</h1>
-				<p> LAH BLAH BLAH </p>
-
-			</div>
-
-			<div class = "contact">
-				<h1 id = "contact"> CONTACT</h1>
-				<p> BLAH BLAH BLAH </p>
-
-			</div>
-
-		</section>
-
-
-		<footer>
-
-		<p> Email: hswlee@uwaterloo.ca </p>
-		<p> &copy; 2015 Hayes Lee. All Rights Reserved. </p>
-
-		</footer>
+<body>
 
 
-	</body>
+
+  <div id = "home" class = "page">
+    <div class="container-fluid" >
 
 
+      
+        <!-- <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAO9AAAAJGUzYjg5ZGE5LTIwMjQtNGFkZS1iZjg4LTJlYTA3ZmNmMzhmOQ.jpg" 
+        alt="Cinque Terre" width="250" height="250" class = "profile"> -->
+        <div class="col-md-2"> </div>
+        <!-- <center> -->
+        <div class="col-md-8"> 
+        <img src = "me.png" class = "float-left"/>
+        <h1> HAYES LEE </h1><p></p>
+        <h2> Student &#124 Developer &#124 Designer</h2></p>
+        <p>
+        Hey there! I'm a Systems Design Engineering Student on my 1B term at the University of Waterloo. 
+        Here, you'll learn a little more about me and the stuff I do! 
+        <p>
+        I am very passionate about creativity. From a young age, I would write songs, stories, poetry and create art
+        to express myself through different mediums. My ultimate goal is to be able to find a way to utilize both creativity
+        and my technical skills to do something enjoyable while helping others!
+        <p>
+        On a nice day, you can find me enjoying the fresh air and taking a jog, or I might be relaxing indoors with a 
+        good book and some good food.  
+        </p>
+        <p>Please feel free to take a look around my site using the navigation bar at the top to find out more about me!
+        </p>
+        <img src = "signature.png" class = "profile"/>
+        </div>
+        <div class="col-md-2"> </div>
+        <!-- </center> -->
+        
+   
+     </div>
+  </div>
+
+  <div id = "about" class = "page">
+    <div class="container-fluid">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+
+      
+
+            <h2>About me</h2>
+              <img src = "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAO9AAAAJGUzYjg5ZGE5LTIwMjQtNGFkZS1iZjg4LTJlYTA3ZmNmMzhmOQ.jpg" class = "profile">
+              <p>
+              I love learning new things and the best part of my program is that it provides me with unlimited opportunities to do so. I am passionate in design and development whether it is on the web or through mobile applications. 
+              </p>
+              <p>
+              Some of my hobbies include: 
+              </p>
+              My Resume: 
+              </p>
+              <img src = "resume.png" width = "150px">
+              
+
+            </p>
+          </div>
+
+
+       <div class="col-md-3"> </div>
+
+      
+    </div>
+  </div>
+
+  <div id = "skills" class = "page">
+    <div class="container-fluid" >
+    <center>
+      <h2>Skills and Experience</h2>
+    </center>
+
+      <div class = "row">
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6">
+          
+          <div class = "float-left">
+          <h4>Languages </h4>
+          <ul>
+            <li>HTML/CSS/Javascript (jQuery)</li>
+            <li>Java</li>
+            <li>C++/C#</li>
+            <li>ExtJS</li>
+            <li>T-SQL</li>
+          </ul>
+
+          <h4>Software </h4>
+          <ul>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Photoshop</li>
+            <li>Microsoft Office</li>
+          </ul>
+
+          </div>
+
+          <img src = "wordcloud.png" width = "300" class = "float-right">
+
+        </div>
+
+        <div class="col-md-3"></div>
+
+        </div>
+
+      <div class = "row">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8">
+          <div class = "timeline">
+            <ol>
+              <li>
+                Mar 2014 to Dec 2014
+                <span class="details">
+                  To be added!
+                </span>
+              </li>
+              <li>
+                Jul 2015 to Aug 2015
+                <span class="details">
+                  To be added!
+                </span>
+              </li>
+              <li>
+                Jan 2016 to Apr 2016
+                <span class="details">
+                  To be added!
+                </span>
+              </li>
+            </ol>
+
+          </div>
+        </div>
+        <div class = "col-md-2"></div>
+      </div>
+
+
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+
+  <div id = "projects" class = "page">
+    <div class="container-fluid">
+    <center>
+      <h2>Projects</h2>
+      <div>
+        <figure data-toggle="modal" data-target = "#projects-trakrecord" class = "projects">
+          <img src="trakrecord.png" alt="">
+        </figure>
+        <figure data-toggle="modal" data-target = "#projects-planit" class = "projects">
+          <img src="Plan-IT.png" alt="">
+        </figure>
+        <figure data-toggle="modal" data-target = "#projects-fortuna" class = "projects">
+          <img src="Fortuna.png" alt="">
+        </figure>
+        <figure data-toggle="modal" data-target = "#myModal" class = "projects">
+          <img src="WEWALK.png" alt="">
+        </figure>
+      </div>
+    </center>
+
+    <!-- Modals -->
+    <div id="projects-trakrecord" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Trak Record - Android App</h4>
+          </div>
+          <div class="modal-body">
+            <p>During the weekend of March 25-27 2016, I took part in WearHacks, a hackathon held in Downtown Toronto.
+            In a group of six, we participated in the "Cosette Sick Kids Challenge" where we designed a mobile application
+            with the help of Estimote technology.
+            </p>
+            <p>
+            <center>
+            <img src = "trakrecordhome.png" width = "200px"/>
+            <img src = "trakrecordrace.png" width = "200px"/>
+            </center></p>
+            <p>
+            Technologies used: Android Studio, Adobe Illustrator, Estimote Beacons
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects-planit" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Plan-IT - Game</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+            We attended a Game Design Competition at Stratford, Waterloo where the objective was to 
+            create a one-button game. 
+            </p>
+            <center>
+            <blockquote class="instagram-media" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:300px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0750750751% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BCWKfPwx89M/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by hayeslee13 (@hayeslee13)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-02-28T22:13:58+00:00">Feb 28, 2016 at 2:13pm PST</time></p></div></blockquote>
+            <script async defer src="http://platform.instagram.com/en_US/embeds.js"></script>
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects-fortuna" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Fortuna - Novel</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+            Yo same. 
+            </p>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <div id = "contact" class = "page">
+    <div class="container-fluid">
+      <h2>Contact Me</h2>
+
+        <p>
+        Email: hswlee@uwaterloo.ca
+        </p>
+        <p>
+        Phone: (647)-923-9130
+        </p>
+
+        <img src="Icons/Facebook.png"></img>
+        <a href = "http://twitter.com/hayeslee13"><img src="Icons/Twitter.png"></img></a>
+        <a href = "http://linkedin.com/hayeslee13"><img src="Icons/LinkedIn.png"></img></a>
+        <img src="Icons/Google+.png"></img>
+
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
 </html>
