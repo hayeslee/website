@@ -9,7 +9,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="circle.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 
@@ -101,22 +100,39 @@
           <div class="col-md-3"></div>
           <div class="col-md-6">
 
-      
-
             <h2>About me</h2>
               <img src = "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAO9AAAAJGUzYjg5ZGE5LTIwMjQtNGFkZS1iZjg4LTJlYTA3ZmNmMzhmOQ.jpg" class = "profile">
               <p>
-              I love learning new things and the best part of my program is that it provides me with unlimited opportunities to do so. I am passionate in design and development whether it is on the web or through mobile applications. 
+              I love learning new things and the best part of my program is that it provides me with unlimited opportunities to do so. I am passionate in design and development on the web and through mobile applications. 
               </p>
               <p>
-              Some of my hobbies include: 
+              I have a multitude of hobbies that I do in my freetime as well. Reading a good novel is always extremely satisfying 
+              but I also have an interest in writing novels of my own. (Check out my work in progress in my <a href=# onclick="return show('projects');">"projects page!</a> ) 
               </p>
-              My Resume: 
+              View My Resume: 
               </p>
-              <img src = "resume.png" width = "150px">
-              
+              <img src = "resume.png" width = "150px" data-toggle="modal" data-target = "#resume" class = "projects">
+              <div id="resume" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
 
-            </p>
+                      <a href="resume.pdf" download>
+                      <button type="button" class = "btn btn-default" download="resume.png">Download PDF Version</button> 
+                      </a>
+
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                    <img src = "resume.png" width = "100%">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
 
 
@@ -258,12 +274,15 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Plan-IT - Game</h4>
+            <h4 class="modal-title">Plan-IT - Third Place</h4>
           </div>
           <div class="modal-body">
             <p>
             We attended a Game Design Competition at Stratford, Waterloo where the objective was to 
             create a one-button game. 
+            </p>
+            <p>
+            After many hours of hard work, we presented "Plan-IT", a game where you have to create the largest planet to win.
             </p>
             <center>
             <blockquote class="instagram-media" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:300px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0750750751% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BCWKfPwx89M/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by hayeslee13 (@hayeslee13)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-02-28T22:13:58+00:00">Feb 28, 2016 at 2:13pm PST</time></p></div></blockquote>
@@ -285,9 +304,7 @@
             <h4 class="modal-title">Fortuna - Novel</h4>
           </div>
           <div class="modal-body">
-            <p>
-            Yo same. 
-            </p>
+            <iframe width="500" height="280" frameborder="0" allowfullscreen="" src="https://embed.wattpad.com/story/68926527" ></iframe>
             
           </div>
           <div class="modal-footer">
