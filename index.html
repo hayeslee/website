@@ -14,20 +14,7 @@
 
 </head>
 <header>
-<!--  <nav class="navbar-inverse navbar-fixed-top"> 
-        <div class="navbar-header"> 
-          <a class="navbar-brand" href="index.html">HAYES LEE</a>
-        </div>
-        <div class="navbar-inner">
-          <ul class="nav navbar-nav">  
-            <li><a href=# onclick="return show('home');"> HOME</a></li> 
-            <li><a href=# onclick="return show('about');"> ABOUT ME</a></li> 
-            <li><a href=# onclick="return show('skills');">SKILLS/EXPERIENCE</a></li> 
-            <li><a href=# onclick="return show('projects');">PROJECTS</a></li>
-            <li><a href=# onclick="return show('contact');">CONTACT</a></li>
-          </ul>
-        </div>
-  </nav> -->
+
 
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -111,7 +98,7 @@
               </p>
               View My Resume: 
               </p>
-              <img src = "resume.png" width = "150px" data-toggle="modal" data-target = "#resume" class = "projects">
+              <img src = "resume.png" width = "150px" data-toggle="modal" data-target = "#resume">
               <div id="resume" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                   <!-- Modal content-->
@@ -157,17 +144,19 @@
           <div class = "float-left">
           <h4>Languages </h4>
           <ul>
-            <li>HTML/CSS/Javascript (jQuery)</li>
+            <li>HTML/CSS/Javascript</li>
             <li>Java</li>
             <li>C++/C#</li>
             <li>ExtJS</li>
-            <li>T-SQL</li>
+            <li>SQL</li>
           </ul>
 
           <h4>Software </h4>
           <ul>
             <li>Adobe Illustrator</li>
             <li>Adobe Photoshop</li>
+            <li>SolidWorks</li>
+            <li>AutoCAD</li>
             <li>Microsoft Office</li>
           </ul>
 
@@ -224,18 +213,21 @@
     <center>
       <h2>Projects</h2>
       <div>
-        <figure data-toggle="modal" data-target = "#projects-trakrecord" class = "projects">
-          <img src="trakrecord.png" alt="">
-        </figure>
-        <figure data-toggle="modal" data-target = "#projects-planit" class = "projects">
-          <img src="Plan-IT.png" alt="">
-        </figure>
-        <figure data-toggle="modal" data-target = "#projects-fortuna" class = "projects">
-          <img src="Fortuna.png" alt="">
-        </figure>
-        <figure data-toggle="modal" data-target = "#myModal" class = "projects">
-          <img src="WEWALK.png" alt="">
-        </figure>
+        <div class = "projects" data-toggle="modal" data-target = "#projects-trakrecord">
+          <img src="trakrecord.png" alt="" class = "grow">
+        </div>
+        <div data-toggle="modal" data-target = "#projects-planit" class = "projects">
+          <img src="Plan-IT.png" alt="" class = "grow">
+        </div>
+        <div data-toggle="modal" data-target = "#projects-fortuna" class = "projects">
+          <img src="Fortuna.png" alt="" class = "grow">
+        </div>
+        <div data-toggle="modal" data-target = "#myModal" class = "projects">
+          <img src="Portal.png" alt="" class = "grow">
+        </div>
+        <div data-toggle="modal" data-target = "#myModal" class = "projects">
+          <img src="WEWALK.png" alt="" class = "grow">
+        </div>
       </div>
     </center>
 
