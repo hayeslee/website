@@ -4,7 +4,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    background-image: url('background.png');*/
+    background-image: url('background.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -102,6 +102,10 @@ h2{
   height: 100%;
 }
 
+#home{
+  display: block;
+}
+
 ul.share-buttons{
   list-style: none;
   padding: 0;
@@ -171,12 +175,12 @@ ul.share-buttons li{
   content: "";
   position: absolute;
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 20px;
+  height: 20px;
   border: 4px solid #000;
   border-radius: 10px;
   background: #eee;
-  top: 50px;
+  top: 45px;
   left: 50%;
 }
 
@@ -212,26 +216,54 @@ ul.share-buttons li{
 
 /* ---- Hover effects ---- */
 
-.timeline li:hover {
+/*.timeline li:hover {
   cursor: pointer;
   color: #28e;
-}
+}*/
 .timeline li:hover::before {
   content: "";
   position: absolute;
   display: block;
-  width: 6px;
-  height: 6px;
-  border: 4px solid #fff;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #000;
   border-radius: 10px;
-  background: #eee;
-  top: 50px;
+  background: #000;
+  top: 45px;
   left: 50%;
+  cursor: pointer;
 }
-.timeline li:hover .details {
+/*.timeline li:hover .details {
   display: block;
   color: #444;
 }
+*/
+.timeline li:focus::before {
+  
+  border: 4px solid #000;
+  border-radius: 10px;
+  background: #000;
+  top: 45px;
+  left: 50%;
+}
 
 .grow { transition: all .3s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+.grow:hover { transform: scale(1.1);} 
+
+
+/*.sliding-u-l-r {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 3px solid transparent;    
+    width: 0px;
+    transition: 1s ease;
+    white-space: nowrap;
+    padding: none;
+    margin-bottom: -2%;
+    /*height: 25px;*/
+}
+/*.sliding-u-l-r:hover {
+    border-bottom: 3px solid black;
+    width: 60%;
+}*/
+

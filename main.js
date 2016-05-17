@@ -3,7 +3,13 @@ var currentID = 'home';
 
 $(document).ready(function (){
     $('#' + currentID).fadeIn(500);
-   
+
+    $('.timelineButton').click(function(){
+        debugger;
+        $('.timelineButton').children('.details').hide("slide");
+        $(this.children).show("slide");
+    });
+
 });
 
 function show(elementID) {
