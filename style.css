@@ -124,7 +124,7 @@ ul.share-buttons li{
     background-color: #F5F5F5
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #2C3E50
+    background-color: black
 }
 
 /* ---- Timeline ---- */
@@ -233,19 +233,12 @@ ul.share-buttons li{
   left: 50%;
   cursor: pointer;
 }
+
 /*.timeline li:hover .details {
   display: block;
   color: #444;
 }
 */
-.timeline li:focus::before {
-  
-  border: 4px solid #000;
-  border-radius: 10px;
-  background: #000;
-  top: 45px;
-  left: 50%;
-}
 
 .grow { transition: all .3s ease-in-out; }
 .grow:hover { transform: scale(1.1);} 
@@ -260,10 +253,9 @@ ul.share-buttons li{
     white-space: nowrap;
     padding: none;
     margin-bottom: -2%;
-    /*height: 25px;*/
+    /*height: 25px;
 }
-/*.sliding-u-l-r:hover {
+.sliding-u-l-r:hover {
     border-bottom: 3px solid black;
     width: 60%;
 }*/
-

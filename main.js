@@ -5,8 +5,10 @@ $(document).ready(function (){
     $('#' + currentID).fadeIn(500);
 
     $('.timelineButton').click(function(){
-        debugger;
-        $('.timelineButton').children('.details').hide("slide");
+
+        if (!$(this).children().is(":visible"))
+            $('.timelineButton').children('.details').hide("slide");
+
         $(this.children).show("slide");
     });
 
