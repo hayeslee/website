@@ -14,6 +14,7 @@ $(document).ready(function (){
 	$('a[href^="#"]').click(navigate);
 	$('#container').scroll(scrollContainer);
 	$('.icon').click(openNav);
+	$('.close').click(closeModal);
 
 	// masonry
 	$('.grid').imagesLoaded().progress( function() {
@@ -24,15 +25,15 @@ $(document).ready(function (){
 		});
 	});
 
+	$('.modal-mask').click(function(){
+		if ($(event.target).hasClass('modal-mask'))
+			closeModal();
+	});
+
 	$('.grid-item').click(function(){
 		var index = $(this).data().index;
 		$(".modals").show();
 		$(".modal[data-index='" + index +"']").show();
-	});
-
-	$('.close').click(function(){
-		$(".modal").hide();
-		$(".modals").hide();
 	});
 
 	// functions
@@ -71,6 +72,11 @@ $(document).ready(function (){
 		scrollDivs = [$('#home'), $('#life'), $('#projects'), $('#contact')];
 
 		$("[href='#home']").addClass("active");
+	}
+
+	function closeModal(){
+		$(".modal").hide();
+		$(".modals").hide();
 	}
 
 	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
