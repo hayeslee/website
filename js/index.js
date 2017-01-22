@@ -16,10 +16,12 @@ $(document).ready(function (){
 	$('.icon').click(openNav);
 
 	// masonry
-	$('.grid').masonry({
-	  itemSelector: '.grid-item',
-	  columnWidth: 200,
-	  gutter: 5
+	$('.grid').imagesLoaded().progress( function() {
+		$('.grid').masonry({
+		  itemSelector: '.grid-item',
+		  columnWidth: 200,
+		  gutter: 5
+		});
 	});
 
 	$('.grid-item').click(function(){
@@ -29,11 +31,6 @@ $(document).ready(function (){
 	});
 
 	$('.close').click(function(){
-		$(".modal").hide();
-		$(".modals").hide();
-	});
-
-	$('.modal-mask').click(function(){
 		$(".modal").hide();
 		$(".modals").hide();
 	});
