@@ -107,7 +107,7 @@ input, textarea{
   width: 60%; /* Full width */
   height: 70%; /* Full height */
   overflow-y: auto; /* Enable scroll if needed */
-  background-color: white;
+  background-color: whitesmoke;
   margin: 0 auto;
   border-radius: 5px;
 }
@@ -115,10 +115,6 @@ input, textarea{
 .modal-content {
   padding: 10px;
   font-size: 12px;
-}
-
-.modal-content img{
-  width: 50%;
 }
 
 .modal-points{
@@ -131,6 +127,10 @@ input, textarea{
   float: right;
   white-space: nowrap;
 } 
+
+.modal-gallery img{
+  width: 50%;
+}
 
 .close {
   color: #aaa;

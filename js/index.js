@@ -33,6 +33,11 @@ $(document).ready(function (){
 		$(".modals").hide();
 	});
 
+	$('.modal-mask').click(function(){
+		$(".modal").hide();
+		$(".modals").hide();
+	});
+
 	// functions
 	function scrollContainer(){
 		// Get container scroll position
