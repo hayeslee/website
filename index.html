@@ -32,7 +32,8 @@
 			</div>
 			<div class="section" id="life">
 				<h1> about me </h1>
-				<img src="images/me.png" width="50%" class="float-right"/>
+				<div class="intro-me"></div>
+					<!-- <img src="images/me.png" width="50%" class="float-right"/> -->
 				<div class="intro">
 					<p>
 						Hey there! I'm glad that you stopped by! I am currently studying my second year in Systems Design Engineering at the University of Waterloo. 
@@ -46,19 +47,15 @@
 					<p>
 						Check out some of the projects I have done in the next section and feel free to contact me if you have any questions. 
 					</p>
-					<a href="">Click here to download a copy of my resume!</a>
-<!-- 					<div class="intro-photos">
-						<img src="images/me-singing-01.png" height="200px"/>
-						<img src="images/me-friends-01.png" height="200px"/>
-					</div> -->
+					<a href="resume.pdf" target="_blank">Click here to view my resume!</a>
 				</div>
 			</div>
 			<div class="section" id="projects">
 				<h1> my projects </h1>
 				<div class="grid">
-					<div class="grid-item" data-index="1"><img src="images/projects-trakrecord.png"/></div>
-					<div class="grid-item" data-index="2"><img src="images/projects-planit.png"/></div>
-					<div class="grid-item" data-index="3"><img src="images/projects-everest.png"/></div>
+					<div class="grid-item" data-index="1"><img src="images/projects-everest.png"/></div>
+					<div class="grid-item" data-index="2"><img src="images/projects-trakrecord.png"/></div>
+					<div class="grid-item" data-index="3"><img src="images/projects-planit.png"/></div>
 					<div class="grid-item" data-index="4"><img src="images/projects-sushi.png"/></div>
 					<div class="grid-item" data-index="5"><img src="images/projects-icons.png"/></div>
 					<div class="grid-item" data-index="6"><img src="images/projects-writing.png"/></div>
@@ -82,7 +79,25 @@
 		<!-- project modals -->
 		<div class="modals">
 			<div class="modal-mask">
-				<div class="modal" data-index="1">
+			<div class="modal" data-index="1">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<h3>Everest: Event Social Networking iOS App</h3>
+						<p></p>
+						<p>Learn more about the app here: <a href="http://everestapp.ca" target='_blank'>Everest</a></p>
+						<p>Things I learned from this experience:</p>
+						<ul>
+							<li>Applying the iterative design process to achieve the optimal UX</li>
+							<li>Creating mobile and web mockups for an application</li>
+							<li>Working in a group using tools like Trello, Bitbucket and Skype</li>
+						</ul>
+						<p>Initial Sketches for the User Flow of our mobile app:</p>
+						<img src="images/everest-sketches.png" width=100%/>
+						<p>Mockups for selected views:</p>
+						<img src="images/everest-mobile-mockups.png" width=100%/>
+					</div>
+				</div>
+				<div class="modal" data-index="2">
 					<div class="modal-content">
 						<span class="close">&times;</span>
 						<h3>Trak Record: An Android App for Marathon Runners</h3>
@@ -101,7 +116,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="modal" data-index="2">
+				<div class="modal" data-index="3">
 					<div class="modal-content">
 						<span class="close">&times;</span>
 						<h3>PLAN-IT: A Single Player One Button Game</h3>
@@ -109,24 +124,7 @@
 						<p>During the first night, we brainstormed and thought of creative ways to implement a game that was both simple to learn and fun to play. Thus, PLAN-IT, a simple planet-building game, was born.</p>
 					</div>
 				</div>
-				<div class="modal" data-index="3">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<h3>Everest: Event Social Networking iOS App</h3>
-						<p></p>
-						<p>Learn more about the app here: <a href="http://everestapp.ca" target='_blank'>Everest</a></p>
-						<p>Things I learned from this experience:</p>
-						<ul>
-							<li>Applying the iterative design process to achieve the optimal UX</li>
-							<li>Creating mobile and web mockups for an application</li>
-							<li>Working in a group using tools like Trello, Bitbucket and Skype</li>
-						</ul>
-						<p>Initial Sketches for the User Flow of our mobile app:</p>
-						<img src="images/everest-sketches.png" width=100%/>
-						<p>Mockups for selected views:</p>
-						<img src="images/everest-mobile-mockups.png" width=100%/>
-					</div>
-				</div>
+				
 				<div class="modal" data-index="4">
 					<div class="modal-content">
 						<span class="close">&times;</span>

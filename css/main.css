@@ -72,6 +72,24 @@ input, textarea{
   text-justify: inter-word;
 }
 
+.intro a{
+  color: white;
+}
+
+.intro-me{
+  float: right;
+  width: 50%;
+  background-image: url('../images/me.png');
+  background-repeat: no-repeat;
+  height: 0;
+  padding-top: 50%;
+  background-size: contain;
+}
+
+.intro-me:hover{
+  background-image: url('../images/me-coloured.png');
+}
+
 /*PROJECTS*/
 .grid-item { 
   width: 200px;
