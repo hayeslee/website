@@ -72,8 +72,16 @@ input, textarea{
   text-justify: inter-word;
 }
 
-.intro a{
-  color: white;
+.intro button{
+  padding: 5px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intro button:hover{
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .intro-me{

@@ -25,8 +25,8 @@ $(document).ready(function (){
 		});
 	});
 
-	$('.modal-mask').click(function(){
-		if ($(event.target).hasClass('modal-mask'))
+	$('.modal-mask').click(function(e){
+		if ($(e.target).hasClass('modal-mask'))
 			closeModal();
 	});
 
