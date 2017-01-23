@@ -34,6 +34,7 @@ $(document).ready(function (){
 		var index = $(this).data().index;
 		$(".modals").show();
 		$(".modal[data-index='" + index +"']").show();
+		$('.container').addClass('stop-scrolling');
 	});
 
 	// functions
@@ -77,6 +78,7 @@ $(document).ready(function (){
 	function closeModal(){
 		$(".modal").hide();
 		$(".modals").hide();
+		$('.container').removeClass('stop-scrolling');
 	}
 
 	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
