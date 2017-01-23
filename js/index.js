@@ -12,7 +12,7 @@ $(document).ready(function (){
 	// event listeners
 	$( window ).resize(initializeHeights);
 	$('a[href^="#"]').click(navigate);
-	$('#container').scroll(scrollContainer);
+	$('.container').scroll(scrollContainer);
 	$('.icon').click(openNav);
 	$('.close').click(closeModal);
 
@@ -61,7 +61,7 @@ $(document).ready(function (){
 		event.preventDefault();	
 		var index = $($(this).attr('href')).index( ".section" );
 
-		$('#container').animate({
+		$('.container').animate({
 			  scrollTop: sectionTopPosition[index]
 		}, 1000);
 	}
