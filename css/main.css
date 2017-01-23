@@ -172,6 +172,21 @@ input, textarea{
   cursor: pointer;
 }
 
+.icon-gallery{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+
+.icon-gallery li{
+  float: left;
+}
+
+.icon-gallery li img{
+  width: 150px;
+}
+
 /*CONTACT*/
 #contact{
   margin-bottom: 200px;
@@ -280,6 +295,12 @@ ul.nav-top li.icon {background-color: none; display: none;}
   .modal-points, .modal-gallery, .grid-item{
     width: 100%;
   } 
+  .icon-gallery li{
+    width: 50%;
+  }
+  .icon-gallery li img{
+    width: 100%;
+  }
 }
 
 /*scrollbar*/
