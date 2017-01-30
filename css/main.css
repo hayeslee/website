@@ -99,6 +99,10 @@ input, textarea{
 }
 
 /*PROJECTS*/
+.grid{
+  margin: 0 auto;
+}
+
 .grid-item { 
   width: 200px;
   cursor: pointer;
