@@ -35,6 +35,7 @@ p {
 html,
 body {
 	height: 100%;
+	overflow-x: none;
 }
 
 .alignleft { float: left; }
@@ -433,48 +434,6 @@ input {
 		-ms-transform:     translateY(-15px);
 		transform:         translateY(-15px);
 	}
-}
-
-/*Slide in*/
-.animation-element {
-  opacity: 0;
-  position: relative;
-}
-/*animation element sliding left*/
-
-.animation-element.slide-left {
-  opacity: 0;
-  -moz-transition: all 500ms linear;
-  -webkit-transition: all 500ms linear;
-  -o-transition: all 500ms linear;
-  transition: all 500ms linear;
-  -moz-transform: translate3d(-100px, 0px, 0px);
-  -webkit-transform: translate3d(-100px, 0px, 0px);
-  -o-transform: translate(-100px, 0px);
-  -ms-transform: translate(-100px, 0px);
-  transform: translate3d(-100px, 0px, 0px);
-}
-
-.animation-element.slide-right {
-  opacity: 0;
-  -moz-transition: all 500ms linear;
-  -webkit-transition: all 500ms linear;
-  -o-transition: all 500ms linear;
-  transition: all 500ms linear;
-  -moz-transform: translate3d(100px, 0px, 0px);
-  -webkit-transform: translate3d(100px, 0px, 0px);
-  -o-transform: translate(100px, 0px);
-  -ms-transform: translate(100px, 0px);
-  transform: translate3d(100px, 0px, 0px);
-}
-
-.animation-element.slide-left.in-view, .animation-element.slide-right.in-view, .animation-element.train.in-view {
-  opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
 }
 
 .col-lg-3{
