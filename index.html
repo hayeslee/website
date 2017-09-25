@@ -1,221 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id="htmlHead">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>hayes lee</title>
-	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="css/main.css" />
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-</head>
-<body>
-	<div class="container">
-		<div id= "nav">
-			<ul class="nav-top" id="topNav">
-				<li class="icon">
-				    <a href="">&#9776;</a>
-				 </li>
-				<li><a href="#home"">home</a></li>
-				<li><a href="#life"">about me</a></li>
-				<li><a href="#projects">my projects</a></li>
-				<li><a href="#contact">contact me</a></li>
-			</ul>
-		</div>
-		<div id="content">
-			<div class="section" id="home">
-				<div class="title"><h1> hayes lee </h1>student | designer | developer | writer</div>
-			</div>
-			<div class="section" id="life">
-				<h1> about me </h1>
-				<div class="intro-me"></div>
-					<!-- <img src="images/me.png" width="50%" class="float-right"/> -->
-				<div class="intro">
-					<p>
-						Hey there! I'm glad that you stopped by! I am currently studying my second year in Systems Design Engineering at the University of Waterloo. 
-					</p>
-					<p>
-						I have a passion for user-friendly, visually appealing design and how the practice of good design can lead to better and memorable experiences. 
-					</p>
-					<p>
-						I am a creative and independent individual who is always striving to learn more. I love to create artwork, stories, music - you name it! 
-					</p>
-					<p>
-						Check out some of the projects I have done in the next section and feel free to contact me if you have any questions. 
-					</p>
-					<button onClick="window.open('resume.pdf');">Click here to view my resume!</button>
-				</div>
-			</div>
-			<div class="section" id="projects">
-				<h1> my projects </h1>
-				<div class="grid">
-					<div class="grid-item" data-index="1"><img src="images/projects-everest.png"/></div>
-					<div class="grid-item" data-index="2"><img src="images/projects-trakrecord.png"/></div>
-					<div class="grid-item" data-index="3"><img src="images/projects-planit.png"/></div>
-					<div class="grid-item" data-index="4"><img src="images/projects-sushi.png"/></div>
-					<div class="grid-item" data-index="5"><img src="images/projects-icons.png"/></div>
-					<div class="grid-item" data-index="6"><img src="images/projects-writing.png"/></div>
-				</div>
-			</div>
-			<div class="section" id="contact">
-				<h1> contact me </h1>
-				<div class="contact-social">
-					<a href="mailto:hswlee@edu.uwaterloo.com"><div class="icon-envelope"></div></a>
-					<a href="https://www.facebook.com/hayes.lee.9"><div class="icon-social-facebook"></div></a>
-					<a href="https://www.twitter.com/hayeslee13"><div class="icon-social-twitter"></div></a>
-					<a href="https://www.instagram.com/hayeslee13"><div class="icon-social-instagram"></div></a>
-					<a href="https://ca.linkedin.com/in/hayeslee13"><div class="icon-social-linkedin"></div></a>
-				</div>
-				<p class="love">Made with <i class="icon-heart"></i> by Hayes Lee</p>
-			</div>
-		</div>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicon.ico">
 
-		<img src="images/bg-mountains3.png" id="bg-mountains"/>
+    <title>Hayes Lee</title>
 
-		<!-- project modals -->
-		<div class="modals">
-			<div class="modal-mask">
-			<div class="modal" data-index="1">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<h3>Everest: Event Social Networking iOS App</h3>
-						<p></p>
-						<p>Learn more about the app here: <a href="http://everestapp.ca" target='_blank'>Everest</a></p>
-						<p>Things I learned from this experience:</p>
-						<ul>
-							<li>Applying the iterative design process to achieve the optimal UX</li>
-							<li>Creating mobile and web mockups for an application</li>
-							<li>Working in a group using tools like Trello, Bitbucket and Skype</li>
-						</ul>
-						<p>Initial Sketches for the User Flow of our mobile app:</p>
-						<img src="images/everest-sketches.png" width=100%/>
-						<p>Mockups for selected views:</p>
-						<img src="images/everest-mobile-mockups.png" width=100%/>
-					</div>
-				</div>
-				<div class="modal" data-index="2">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<h3>Trak Record: An Android App for Marathon Runners</h3>
-						<p>During the weekend of March 25-27 2016, I took part in WearHacks, a hackathon held in Downtown Toronto. In a group of six, we participated in the "Cosette Sick Kids Challenge" where we designed and developed a mobile android application for use in a large-scale marathon event with the help of Estimote technology.</p>
-						<div class="modal-points">
-							<p>Things I learned from this experience:</p>
-							<ul>
-								<li>Development of an app based on user requirements and constraints</li>
-								<li>Mobile application development in Android Studios</li>
-								<li>The creation of UI/UX Mockups in Adobe Illustrator</li>
-							</ul>
-						</div>
-						<div class="modal-gallery">
-							<img src="images/trakrecordhome.png"/>
-							<img src="images/trakrecordrace.png"/>
-						</div>
-					</div>
-				</div>
-				<div class="modal" data-index="3">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<h3>PLAN-IT: A Single Player One Button Game</h3>
-						<div class="modal-points">
-							<p>I attended a game design camp in Stratford, Waterloo last year where the objective was to create a game that was controlled with only one button. In a group of four, we managed to take home 3rd place.</p>
-							<p>During the first night, we brainstormed and thought of creative ways to implement a game that was both simple to learn and fun to play. Thus, PLAN-IT, a simple planet-building game, was born.</p>
-							<p>Things I learned from this experience:</p>
-							<ul>
-								<li>Game creation and development</li>
-								<li>Producing animations and graphics in Adobe Creative Suite</li>
-							</ul>
-							<p>Take a look at the screenshots of the game here: 
-								<a href="http://imgur.com/a/G5VHw">Plan-IT</a>
-							</p>
-						</div>
-						<div class="modal-gallery">
-						<blockquote class="instagram-media" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:300px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0750750751% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BCWKfPwx89M/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by hayeslee13 (@hayeslee13)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-02-28T22:13:58+00:00">Feb 28, 2016 at 2:13pm PST</time></p></div></blockquote>
-        				<script async defer src="http://platform.instagram.com/en_US/embeds.js"></script>
-        				</div>
-					</div>
-				</div>
-				
-				<div class="modal" data-index="4">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<h3>Sushi Shop Tycoon: A One-Player Java Game</h3>
-						<p>
-						<p>Things I learned from this experience:</p>
-						<ul>
-							<li>Pair programming in Java</li>
-							<li>Creating simple vector graphics in Adobe Illustrator</li>
-							<li>Time management and project planning</li>
-						</ul>
-						<img src="images/sushi-main.png" width=100%>
-						<img src="images/sushi-menu.png" width=100%>
-					</div>
-				</div>
-				<div class="modal" data-index="5">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<h3>Icons: Simplistic Icons</h3>
-						<p>A set of simple icons created for a friend's website.</p>
-						<ul class="icon-gallery">
-							<li>
-								<img src="images/icons-01.png"/>
-								<p>Technology/Computers</p>
-							</li>
-							<li>
-								<img src="images/icons-02.png"/>
-								<p>Documents</p>
-							</li>
-							<li>
-								<img src="images/icons-03.png"/>
-								<p>Singing/Performance</p>
-							</li>
-							<li>
-								<img src="images/icons-04.png"/>
-								<p>Writing</p>
-							</li>	
-							<li>
-								<img src="images/icons-05.png"/>
-								<p>Cycle</p>
-							</li>
-							<li>
-								<img src="images/icons-06.png"/>
-								<p>Profile</p>
-							</li>
-							<li>
-								<img src="images/icons-07.png"/>
-								<p>Prototyping</p>
-							</li>
-							<li>
-								<img src="images/icons-08.png"/>
-								<p>Coding</p>
-							</li>
-							<li>
-								<img src="images/icons-09.png"/>
-								<p>Computer-Aided Design</p>
-							</li>							
-						</ul>
-					</div>
-				</div>
-				<div class="modal" data-index="6">
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<h3>Writing: Stories I write</h3>
-						<p>In my free time, I enjoy writing stories and I post them online! Please check them out here and catch a glimpse of my creativity and passion for writing.</p>
-						<center>
-							<iframe width="500" height="280" frameborder="0" allowfullscreen="" src="https://embed.wattpad.com/story/68926527" ></iframe>
-							<iframe width="500" height="280" frameborder="0" allowfullscreen="" src="https://embed.wattpad.com/story/61925963" ></iframe>
-						</center>
-					</div>
-				</div>				
-			</div>
-		</div>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-	</div>
-</body>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
 
 
+  </head>
+  <body>
+
+    <div id="h">
+      <div class="logo">
+        <img src="assets/img/logo.png"/>
+      </div><!--/logo-->
+      <div class="container centered">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <img id="headerImg" class = "img-circle" src = "assets/img/self-blinking.gif" width=40%>
+            <h1>Hello, my name is <b>Hayes Lee</b>.
+            <br/>I am a <span class="alt-font">designer</span> and a <span class="alt-font">storyteller.</span></h1>
+
+            <section id="arrow">
+              <a href="#about"><span></span></a>
+            </section>
+
+          </div>
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--H-->
+
+    <div class="container portfolio-summary" id="about">
+      <div class="row">
+        <h2 class="centered mb">I create meaningful experiences<br/>through elaborate storytelling.</h2>
+        <div class="col-md-6 animation-element slide-left">
+          <p>Behind every design decision, there is a hidden story and behind every story, there is a moment of inspiration. I have a passion in finding these moments, discovering stories and creating solutions to solve user-experienceproblems. I love to learn and I hope to grow and build my knowledge in the world of design whenever I can. Check out my portfolio for some of the things I have worked on!</p>
+        </div><!--/col-md-6-->
+        <div class="col-md-6 animation-element slide-right">
+          <p>I am currently a second-year student at the University of Waterloo studying Systems Design Engineering. On a nice day, find me outside reading a good book and enjoying the sun. On a rainy day, well...you can find me inside reading a good book and enjoying the sound of rain. I tend to make the best out of every situation and find the silver linings in life. If you want to learn a bit more about me, click the buttons below!</p>
+        </div><!--/col-md-6-->
+      </div><!--/row-->
+    </div><!-- /.container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 centered">
+          <!-- <img src="assets/img/items.png"> -->
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="assets/img/badge-01.png" width="80%">
+            </div><!--/col-sm-4-->
+            <div class="col-sm-3">
+              <img src="assets/img/badge-02.png" width="80%%">
+            </div><!--/col-sm-4-->
+            <div class="col-sm-3">
+              <img src="assets/img/badge-03.png" width="80%">
+            </div><!--/col-sm-4-->
+            <div class="col-sm-3">
+              <img src="assets/img/badge-04.png" width="80%">
+            </div><!--/col-sm-4-->
+          </div><!--/.row-->
+        </div>
+      </div><!--/row-->
+    </div><!--/.container-->
+
+    <p>
+    <br>
+    <p>
+
+    <div id="grey">
+      <div class="container">
+        <div class="row centered">
+          <h2>Check out some things I've worked on.</h2>
+          <div class="col-md-8 col-md-offset-2">
+            <p><i>"Inspiration the seed. Design but the flower.</i>"<br/>-Michael Langham</p>
+
+          </div><!--/col-md-8-->
+        </div><!--/row-->
+
+      </br>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+          <a href="portfolio-01.html" class="portfolio-link">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h6>UX RESEARCH</h6>
+                AIR MILES Context Chats
+                </br>
+                <i class="ion-eye larger"></i>
+              </div>
+            </div>
+            <img src="assets/img/portfolio-01/portfolio-01-header.jpg">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+          <a href="portfolio-02.html" class="portfolio-link">
+             <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h6>UI/UX DESIGN</h6>
+                SLICE Website Redesign
+                </br>
+                <i class="ion-eye larger"></i>
+              </div>
+            </div>
+            <img src="assets/img/portfolio-02/slice-events.jpg">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+          <a href="portfolio-03.html" class="portfolio-link">
+             <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h6>UI/UX DESIGN</h6>
+                Everest Event Planning App
+                </br>
+                <i class="ion-eye larger"></i>
+              </div>
+            </div>
+            <img src="assets/img/portfolio-03/everest-home.png">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+          <a href="portfolio-04.html" class="portfolio-link">
+             <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h6>UI/UX DESIGN - BUSINESS</h6>
+                LoyaltyOne Case Competition
+                </br>
+                <i class="ion-eye larger"></i>
+              </div>
+            </div>
+            <img src="assets/img/portfolio-04/portfolio-04-header.jpg">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+          <a href="portfolio-05.html" class="portfolio-link">
+             <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h6>UI/UX - ANDROID</h6>
+                TrakRecord: A Marathon App
+                </br>
+                <i class="ion-eye larger"></i>
+              </div>
+            </div>
+            <img src="assets/img/portfolio-05/projects-trakrecord.png">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+          <a href="portfolio-06.html" class="portfolio-link">
+             <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h6>GAME DESIGN</h6>
+                PLAN-IT: A One Button Game
+                </br>
+                <i class="ion-eye larger"></i>
+              </div>
+            </div>
+            <img src="assets/img/portfolio-07/plan-it.png">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+          <a href="portfolio-07.html" class="portfolio-link">
+             <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h6>UI/UX DESIGN</h6>
+                Daily UI Challenge
+                </br>
+                <i class="ion-eye larger"></i>
+              </div>
+            </div>
+            <img src="assets/img/portfolio-08/checkout.jpg">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 portfolio-item">
+          <a href="portfolio-08.html" class="portfolio-link">
+             <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h6>WRITING</h6>
+                Creative Writing
+                </br>
+                <i class="ion-eye larger"></i>
+              </div>
+            </div>
+            <img src="assets/img/portfolio-01/portfolio-01-header.jpg">
+          </a>
+        </div>
+        </div><!--/.container-->
+      </div>
+    </div>
+
+    </div>
+    </div><!--/.G-->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-md-8 col-md-offset-2">
+            <h1>I love meeting new people.</h1>
+            <h3 class="mb">Find out more about me and let's get in touch.<br/></h3>
+            <button class="btn btn-conf btn-clear">View Resume</button>
+          </div>
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--/.contact-->
+
+   <div id="footer">
+      <div class="container">
+        <div class="row centered">
+            <a href="https://twitter.com/hayeslee13"><i class="ion-social-twitter"></i></a>
+            <a href="https://www.instagram.com/hayeslee13/"><i class="ion-social-instagram"></i></a>
+            <a href="https://www.facebook.com/hayeslee13"><i class="ion-social-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/hayeslee13/"><i class="ion-social-linkedin"></i></a>
+        </div>
+      </div><!--/container-->
+    </div><!--/.footer-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+  </body>
 </html>
-
