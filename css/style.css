@@ -1,0 +1,135 @@
+h1, h2, h3, a{
+    font-family: 'Lato', serif;
+    font-weight: bold;
+}
+
+p, ul, figcaption{
+   font-family: 'Frank Ruhl Libre', sans-serif; 
+}
+
+.bg{
+    background-size: cover;
+}
+
+/* Portfolio Backgrounds */
+
+.tribel{
+    background-image: url("../assets/tribel.png");
+}
+
+.tribel-header{
+    background-image: url("../assets/tribel/tribel-header.png");
+}
+
+.slice{
+    background-image: url("../assets/slice.png");
+}
+
+.slice-header{
+    background-image: url("../assets/slice/slice-header.png");
+}
+
+.reduce{
+    background-image: url("../assets/reduce.png");
+}
+
+.context-chat{
+    background-image: url("../assets/context-chat.png");
+}
+
+
+/* Page Colours */
+#tribel .f2{
+    color: #6E79C6;
+}
+
+#slice .f2{
+    color: #33B2E5;
+}
+
+.magenta{
+    background-color: #D28BD1;
+}
+
+.evergreen{
+    background-color: #7FDA91;
+}
+
+.evergreen-text{
+    color: #7FDA91;
+}
+
+.cloud{
+    background-color: #7FCFEF;
+}
+
+.indigo{
+    /*background-color: #3F5B7A;*/
+    background: linear-gradient(to right, #3F5B7A , #6ea5c6);
+}
+
+.text-grey{
+    color: #4F4F4F;
+}
+
+.subtitle{
+    font-weight: 300;
+}
+
+.lh-card-title { 
+    line-height: 0.75; 
+}
+
+.button{
+    color: #3F5B7A;;
+}
+@media only screen and (min-width: 768px) { 
+    .previous{
+        display: none;
+        position: fixed;
+        top: 50%;
+    }
+
+    .next{
+        display: none;
+        position: fixed;
+        top: 50%;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 600px) { 
+    .previous{
+        display: none;
+    }
+    .next{
+        display: none;
+    }
+}
+
+/* ANIMATIONS */
+.st6, .st7{
+  webkit-animation-duration: 2.15s;
+  animation: st6 4s infinite;
+}
+
+.arms, .book, .hands{
+  webkit-animation-duration: 2.15s;
+  animation: bookdown 4s infinite;
+}
+
+@keyframes st6 {
+  0% { transform: translate(0px, 0px);}
+  20% { transform: translate(-10px, -5px);}
+  40% { transform: translate(10px, -5px); }
+  60% { transform: translate(0px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@keyframes bookdown{
+  0% { transform: translate(0px, 0px);  }
+  20% { transform: translate(0px, 20px);}
+  40% { transform: translate(0px, 20px); }
+  60% { transform: translate(0px, 20px); }
+  100% { transform: translate(0px, 0px); }
+} 
+
