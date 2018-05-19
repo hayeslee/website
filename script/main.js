@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	var colour;
 	$( "#avatar" ).click(function() {
-		var colours = ['#6ec6a5', '#8fc66e', '#bbc66e', '#796ec6'];
+		var colours = ['#6ec6a5', '#8fc66e', '#bbc66e', '#796ec6', '#3F5B7A'];
 		var randColour;
 		do {
 			randColour = colours[Math.floor(Math.random() * colours.length)];
