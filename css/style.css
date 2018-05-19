@@ -7,6 +7,10 @@ p, ul, figcaption{
    font-family: 'Frank Ruhl Libre', sans-serif; 
 }
 
+a{
+  text-decoration: none;
+}
+
 .bg{
     background-size: cover;
 }
@@ -29,6 +33,22 @@ p, ul, figcaption{
     background-image: url("../assets/slice/slice-header.png");
 }
 
+.context-chats{
+    background-image: url("../assets/context-chat.png");
+}
+
+.context-chats-header{
+    background-image: url("../assets/context-chats/context-chats-header.png");
+}
+
+
+
+
+
+
+
+
+
 .reduce{
     background-image: url("../assets/reduce.png");
 }
@@ -40,12 +60,21 @@ p, ul, figcaption{
 
 /* Page Colours */
 #tribel .f2{
-    color: #6E79C6;
+  color: #6E79C6;
 }
 
 #slice .f2{
-    color: #33B2E5;
+  color: #33B2E5;
 }
+
+#context-chats .f2{
+  color: #CF7171
+}
+
+
+
+
+
 
 .magenta{
     background-color: #D28BD1;
@@ -83,26 +112,28 @@ p, ul, figcaption{
 .button{
     color: #3F5B7A;;
 }
+
+
+
+
 @media only screen and (min-width: 768px) { 
     .previous{
-        display: none;
         position: fixed;
-        top: 50%;
+        bottom: 50%;
     }
 
     .next{
-        display: none;
         position: fixed;
-        top: 50%;
+        bottom: 50%;
         right: 0;
     }
 }
 @media only screen and (max-width: 600px) { 
     .previous{
-        display: none;
+        
     }
     .next{
-        display: none;
+        
     }
 }
 
