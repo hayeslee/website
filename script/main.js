@@ -32,4 +32,16 @@ $(document).ready(function(){
 	    } // End if
   	});
 
+    $('#accordion').find('.accordion-toggle').click(function(){
+
+      $(this).next().slideToggle('medium', function() {
+    if ($(this).is(':visible'))
+        $(this).css('display','flex');
+});
+
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+
+    });
+
 });
