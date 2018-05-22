@@ -49,6 +49,14 @@ a{
     background-image: url("../assets/normandy/normandy-header.png");
 }
 
+.td{
+    background-image: url("../assets/td.png");
+}
+
+.loyaltyone{
+    background-image: url("../assets/loyaltyone.png");
+}
+
 /* Page Colours */
 
 #tribel .f2{
@@ -69,15 +77,6 @@ a{
 
 
 /* Colours */
-
-.evergreen{
-    background-color: #7FDA91;
-}
-
-.cloud{
-    background-color: #7FCFEF;
-}
-
 .indigo{
     background: linear-gradient(to right, #3F5B7A , #6ea5c6);
 }
