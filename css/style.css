@@ -138,6 +138,7 @@ a{
 .arms, .book, .hands{
   webkit-animation-duration: 2.15s;
   animation: bookdown 4s infinite;
+  cursor: pointer;
 }
 
 @keyframes st6 {
