@@ -57,6 +57,14 @@ a{
     background-image: url("../assets/postcajon/postcajon-header.png");
 }
 
+.pocketzookeeper{
+    background-image: url("../assets/pocketzookeeper.png");
+}
+
+.pocketzookeeper-header{
+    background-image: url("../assets/pocketzookeeper-header.png");
+}
+
 .td{
     background-image: url("../assets/td.png");
 }
@@ -83,6 +91,11 @@ a{
 #normandy .f2{
   color: #C66EC5;
 }
+
+#pocketzookeeper .f2{
+  color: #EFAF44;
+}
+
 
 
 /* Colours */
